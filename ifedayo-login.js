@@ -1,14 +1,14 @@
-function validateform(){  
+function validateform() {
     var username = document.myform.username.value; 
     var password = document.myform.password.value;  
-          
-    if (username == ""){  
+    if (username == "") {  
         alert("Name can't be blank");  
-         
-      }
-      if(password.length<6){  
+    } else{
+    alert ("Welcome New User");
+    }
+    if(password.length<6) {  
         alert("Password must be at least 6 characters long.");    
-        }  
-      }  
+    }  
+}  
       
     
