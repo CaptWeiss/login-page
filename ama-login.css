@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #191a1f;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-cotainer{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #15161a;
+    overflow: hidden;
+    top: 90px;
+}
+
+.form-cotainer::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(90deg,transparent,#ae00ff,#00ffff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.form-cotainer::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(90deg,transparent,#fa008a,#cfc9cd);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite; 
+    animation-delay: -3s; 
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+form{
+    position: absolute;
+    inset: 2px;
+    background: #333336;
+    z-index: 10;
+    padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    color: #00ffff;
+    font-size: 2.3em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    width: 300px;
+    margin-top: 40px;
+}
+
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 18px 35px 5px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #87a4bd;
+    color: #87a4bd;
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    background: linear-gradient(to top, #00ffff 50%, #00ffff 50%);
+    background-position: left bottom;
+    background-size:0 1px;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+}
+
+.inputbox input:hover,
+.inputbox input:focus,
+.inputbox input:valid{
+    border-color: #00ffff;
+}
+
+
+.inputbox label {
+    
+    padding: 20px 0;
+    color: #87a4bd;
+    font-size: 1em;
+    transition: all 0.5s ease-in-out;
+}
+
