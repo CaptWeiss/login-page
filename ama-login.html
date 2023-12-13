@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form page</title>
+    <link rel="stylesheet" href="ama-login.css">    
 </head>
 <body>
-    <div></div>
-    <form action="" method="get">
-        <div>
-            <label for="Username">Username</label>
-            <input type="text" id="Username">
-        </div><br>
-        <div>
-            <label for="Password">Password</label>
-            <input type="password" id="Password">
-        </div><br>
-        <button>Login</button>
+    <div class="form-cotainer">
+    <form id="form">
+        <h2>Login</h2>
+        
+        <div  class="inputbox">
+            <label for="name">Username</label>
+            <input type="text" id="name" name="name" >
+            <span id="name_error"></span>
+        </div>
+
+        <div class="inputbox">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" >
+            <span id="password_error"></span>
+        </div>
+        
+        <button type="submit">Login</button>
     </form>
-    
+    </div>
+
+    <script src="ama.js"></script>
 </body>
 </html>

@@ -7,15 +7,28 @@
     <title>Test2</title>
 </head>
 <body>
-    <form name="myform" method="get" action="#" onsubmit="validateform()"> 
-    <label for="username">Username:</label>
-    <input type="text" name="username"> 
-    <br><br>
-    <label for="pwd">Password:</label>
-    <input type="password" name="password">
-    <br><br>
-    <button type="submit">Sign-in</button>
-    </form>
-   <script src="ifedayo-login.js"></script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ifedayo-login.css">
+        <title>Test2</title>
+    </head>
+    <body>
+            <header class="loginheader">LOGIN PAGE</header>
+            <form name="myform" onsubmit="validateform()">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>  
+        <br><br>
+        <label for="pwd">Password:</label>
+        <input type="password" name="password" required>
+        <br><br>
+        <button type="submit">Sign-in</button>
+        <br><br>
+        <span>If you don't have an account, click <a href="ifedayo-signup.html">here</a></span>
+            </form>
+        <script src="ifedayo-login.js"></script>
+    
 </body>
 </html>
