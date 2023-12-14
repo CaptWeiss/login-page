@@ -1,13 +1,31 @@
 function validateform() {
-    var username = document.myform.username.value; 
-    var password = document.myform.password.value;  
-    if (username == "") {  
-        alert("Name can't be blank");  
-         
+  var username = document.getElementById("username").value;
+  var password1 = document.getElementById("password1").value;
+
+  if(username == "") {  
+    document.getElementById("message1").innerHTML = "*Kindly fill your username*";  
+    return false;  
+  } 
+  if(password1 == "") {  
+    document.getElementById("message3").innerHTML = "*Fill the password please!*";  
+    return false;  
+  } 
+  if(password1.length < 6) {  
+    document.getElementById("message3").innerHTML = "*Password length must be atleast 6 characters*";  
+    return false;  
+  }
+    // to get the data
+
+    var getuser = sessionStorage.getItem("username_key");
+    var getpassword = sessionStorage.getItem("password_key");
+    
+    if (username == getuser) {
+      if (password1 == getpassword)
+      {
+        alert ("Login successful");
+        document.write("You are now logged in.");
       }
-      if(password.length<6){  
-        alert("Password must be at least 6 characters long.");    
-    }  
-    localStorage.getItem("username");
-    localStorage.getItem("password1");
-}
+    } else {
+      alert("Invalid data, Please input correct data.");
+    }
+  }

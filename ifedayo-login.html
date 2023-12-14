@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ifedayo-login.css">
-    <title>Test2</title>
-</head>
-<body>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -17,16 +8,18 @@
     </head>
     <body>
             <header class="loginheader">LOGIN PAGE</header>
-            <form name="myform" onsubmit="validateform()">
+            <form name="myform" id="myform" onsubmit="return validateform()">
         <label for="username">Username:</label>
-        <input type="text" name="username" required>  
+        <input type="text" id="username" placeholder="Enter your username">
+        <span id = "message1" style="color:red"> </span> 
         <br><br>
-        <label for="pwd">Password:</label>
-        <input type="password" name="password" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password1" placeholder="Enter your password">
+        <span id = "message3" style="color:red"> </span>
         <br><br>
         <button type="submit">Sign-in</button>
         <br><br>
-        <span>If you don't have an account, click <a href="ifedayo-signup.html">here</a></span>
+        <span>Not a member? Click <a href="ifedayo-signup.html">here</a> to sign up.</span>
             </form>
         <script src="ifedayo-login.js"></script>
     

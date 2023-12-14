@@ -9,21 +9,26 @@
 <body>
     <div class="divform">
         <header class="signupheader">SIGN-UP PAGE</header>
-    <form name="myform" onsubmit="validateform()">
+    <form onsubmit="return validateform()">
     <label for="Name">Username:</label> <br>
-    <input type="text" name="username" required> 
+    <input type="text" id="username"> 
+    <span id = "message1" style="color:red"> </span> 
     <br><br>
     <label for="email">Email address:</label> <br>
-    <input type="email" name="email" required>
+    <input type="email" id="email">
+    <span id = "message2" style="color:red"> </span> 
     <br><br>
     <label for="pwd">Password:</label> <br>
-    <input type="password" name="password" required>
+    <input type="password" id="password1">
+    <span id = "message3" style="color:red"> </span> 
     <br><br>
     <label for="pwd">Confirm Password:</label> <br>
-    <input type="password" name="password2" required> <br> <br>
+    <input type="password" id="password2">
+    <span id = "message4" style="color:red"> </span> 
+     <br><br>
     <button type="submit">Sign-up</button>
     <br><br>
-    <span>Already have an account, click <a href="ifedayo-login.html">here</a></span>
+    <span>Already have an account, click <a href="ifedayo-login.html">here</a> to log in.</span>
         </form>
     </div>
     <script src="ifedayo-signup.js"></script>
