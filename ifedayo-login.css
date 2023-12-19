@@ -63,3 +63,17 @@ button{
    font-size: 15px;
    margin-left: 50px;
 }
+@media only screen and (max-width: 600px) {
+form{
+    width: 100%;
+}
+input{
+    width:100%;
+}
+.signupheader{
+    overflow:scroll;
+}
+.loginheader{
+    overflow:scroll;
+}
+}

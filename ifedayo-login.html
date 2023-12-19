@@ -4,24 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ifedayo-login.css">
-        <title>Test2</title>
+        <title>Project work</title>
     </head>
     <body>
-            <header class="loginheader">LOGIN PAGE</header>
-            <form name="myform" id="myform" onsubmit="return validateform()">
+     <header class="loginheader">LOGIN PAGE</header>
+     <form onsubmit="return validateform()">
         <label for="username">Username:</label>
-        <input type="text" id="username" placeholder="Enter your username">
-        <span id = "message1" style="color:red"> </span> 
+        <input type="text" id="username" placeholder="Enter your username"  onKeyDown="removeErrorMessage()">
+        <span id="message1" style="color:red"> </span> 
         <br><br>
         <label for="password">Password:</label>
-        <input type="password" id="password1" placeholder="Enter your password">
-        <span id = "message3" style="color:red"> </span>
+        <input type="password" id="password1" placeholder="Enter your password"  onKeyDown="removeErrorMessage()">
+        <span id="message3" style="color:red"> </span>
         <br><br>
         <button type="submit">Sign-in</button>
         <br><br>
         <span>Not a member? Click <a href="ifedayo-signup.html">here</a> to sign up.</span>
-            </form>
-        <script src="ifedayo-login.js"></script>
-    
-</body>
-</html>
+     </form>
+     <script src="ifedayo-login.js"></script>
+    </body>
+    </html>

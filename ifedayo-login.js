@@ -4,7 +4,7 @@ function validateform() {
 
   if(username == "") {  
     document.getElementById("message1").innerHTML = "*Kindly fill your username*";  
-    return false;  
+
   } 
   if(password1 == "") {  
     document.getElementById("message3").innerHTML = "*Fill the password please!*";  
@@ -19,13 +19,14 @@ function validateform() {
     var getuser = sessionStorage.getItem("username_key");
     var getpassword = sessionStorage.getItem("password_key");
     
-    if (username == getuser) {
-      if (password1 == getpassword)
-      {
+    if (username === getuser && password1 === getpassword) {
         alert ("Login successful");
         document.write("You are now logged in.");
-      }
-    } else {
+      } else {
       alert("Invalid data, Please input correct data.");
     }
   }
+  function removeErrorMessage() {
+    document.getElementById("message1").innerHTML= "";
+    document.getElementById("message3").innerHTML= "";
+    }
