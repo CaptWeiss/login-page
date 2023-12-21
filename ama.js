@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) =>
 {
     var email_check = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-    if(nameEl.value === '' )
+    if(nameEl.value === '')
 
     {
         e.preventDefault();
