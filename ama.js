@@ -27,7 +27,6 @@ form.addEventListener('submit', (e) =>
     if(nameEl.value === '')
 
     {
-        e.preventDefault();
         name_error.innerHTML = "Name is required";
     }
     if (!emailEl.value.match(email_check))
@@ -43,8 +42,10 @@ form.addEventListener('submit', (e) =>
     if(ConfirmpasswordEl.value !== passwordEl.value || ConfirmpasswordEl.value =='')
 
     {
+        e.preventDefault();
         Confirmpassword_error.innerHTML ="Password does not match";
     }
+    
     
     
     localStorage.setItem('name', nameEl.value);
