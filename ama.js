@@ -43,7 +43,7 @@ form.addEventListener('submit', (e) =>
     if(ConfirmpasswordEl.value !== passwordEl.value || ConfirmpasswordEl.value =='')
 
     {
-        Confirmpassword_error.innerHTML = "Password does not match";
+        Confirmpassword_error.innerHTML ="Password does not match";
     }
     
     
