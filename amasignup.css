@@ -123,3 +123,8 @@ button:hover{
     transform: rotate(-5deg);
     z-index: -1;
 }
+@media (300px <= width <= 600px) {
+    body{
+        background: none;
+    }
+}
